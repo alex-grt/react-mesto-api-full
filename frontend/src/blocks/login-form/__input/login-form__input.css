@@ -1,0 +1,28 @@
+.login-form__input {
+  width: 358px;
+  padding-bottom: 8px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  background: none;
+  color: #ccc;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.21;
+}
+
+.logn-form__input::placeholder {
+  color: #ccc;
+  padding-bottom: 13px;
+}
+
+@media screen and (max-width: 580px) {
+  .login-form__input {
+    width: 260px;
+  }
+}

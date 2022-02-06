@@ -1,0 +1,9 @@
+.login-form__link {
+  transition: .4s;
+  text-decoration: none;
+}
+
+.login-form__link:hover {
+  cursor: pointer;
+  opacity: .6;
+}

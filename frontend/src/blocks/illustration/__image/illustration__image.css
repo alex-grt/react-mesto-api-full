@@ -1,0 +1,8 @@
+.illustration__image {
+  max-width: 100%;
+  max-height: 75vh;
+  display: block;
+  align-self: center;
+  object-fit: contain;
+  object-position: center center;
+}

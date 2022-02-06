@@ -1,0 +1,16 @@
+.header__cover {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+@media screen and (max-width: 580px) {
+  .header__cover {
+    margin-right: 19px;
+  }
+}

@@ -1,0 +1,13 @@
+.form__cover-input {
+  margin: 0;
+}
+
+.form__cover-input:last-of-type {
+  margin: 0 0 18px;
+}
+
+@media screen and (max-width: 580px) {
+  .form__cover-input:last-of-type {
+    margin: 0 0 15px;
+  }
+}

@@ -1,0 +1,23 @@
+.profile-card__title-cover {
+  max-width: calc(100% - 100px);
+  display: flex;
+  position: relative;
+}
+
+@media screen and (max-width: 880px) {
+  .profile-card__title-cover {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .profile-card__title-cover {
+    max-width: calc(100% - 42px * 2);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .profile-card__title-cover {
+    max-width: calc(100% - 28px * 2);
+  }
+}

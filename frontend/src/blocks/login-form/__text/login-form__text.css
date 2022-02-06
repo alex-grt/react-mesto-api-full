@@ -1,0 +1,16 @@
+.login-form__text {
+  min-height: 82px;
+  margin: 15px 0 0;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.21;
+}
+
+@media screen and (max-width: 580px) {
+  .login-form__text {
+    margin: 20px 0 0;
+  }
+}

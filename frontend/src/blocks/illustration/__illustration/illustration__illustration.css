@@ -1,0 +1,5 @@
+.illustration__illustration {
+  max-width: 75vw;
+  display: flex;
+  flex-direction: column;
+}

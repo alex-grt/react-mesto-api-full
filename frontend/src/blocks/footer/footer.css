@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #000;
+  color: #545454;
+  font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    width: calc(100vw - 2 * 19px);
+  }
+}

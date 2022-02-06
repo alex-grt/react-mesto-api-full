@@ -1,0 +1,18 @@
+.login-form {
+  width: 358px;
+  padding: 60px 0 15px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 580px) {
+  .login-form {
+    width: 260px;
+    padding: 40px 0 77px;
+  }
+}

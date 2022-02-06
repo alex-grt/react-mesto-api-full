@@ -1,0 +1,19 @@
+.header {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding-bottom: 30px;
+  }
+}

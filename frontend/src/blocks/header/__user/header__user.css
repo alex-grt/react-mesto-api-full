@@ -1,0 +1,19 @@
+.header__user {
+  margin: 0;
+  overflow: hidden;
+  color: #fff;
+  text-align: right;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.22;
+}
+
+@media screen and (max-width: 580px) {
+  .header__user {
+    text-align: center;
+  }
+}
