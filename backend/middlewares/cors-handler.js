@@ -5,8 +5,6 @@ const allowedOrigins = [
   'https://localhost:3001',
   'http://mesto.alex-grt.nomoredomains.work',
   'https://mesto.alex-grt.nomoredomains.work',
-  'http://api.mesto.alex-grt.nomoredomains.xyz',
-  'https://api.mesto.alex-grt.nomoredomains.xyz',
   'http://51.250.16.166',
   'https://51.250.16.166',
 ];
