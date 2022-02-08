@@ -39,8 +39,9 @@ app.use(auth);
 app.use('/users', usersRouter);
 app.use('/cards', cardsRouter);
 app.use(errorLogger);
-app.use((req, res) => {
+app.use((req, res, next) => {
   res.status(NOT_FOUND).send({ message: 'Ресурс не найден' });
+  next();
 });
 app.use(errors());
 app.use(errorHandler);
