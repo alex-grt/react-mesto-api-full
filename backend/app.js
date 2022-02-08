@@ -40,10 +40,8 @@ app.use('/users', usersRouter);
 app.use('/cards', cardsRouter);
 app.use(errorLogger);
 app.use((err, req, res, next) => {
-  if (err) {
-    res.status(NOT_FOUND).send({ message: 'Ресурс не найден' });
-  }
-  return next();
+  res.status(NOT_FOUND).send({ message: 'Ресурс не найден' });
+  next();
 });
 app.use(errors());
 app.use(errorHandler);
