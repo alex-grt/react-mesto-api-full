@@ -43,7 +43,7 @@ app.use((err, req, res, next) => {
   if (err) {
     res.status(NOT_FOUND).send({ message: 'Ресурс не найден' });
   }
-  next();
+  return next();
 });
 app.use(errors());
 app.use(errorHandler);
