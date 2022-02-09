@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
+const { linkRegExp } = require('../utils/regexps');
 
 const userSchema = new mongoose.Schema({
   email: {
@@ -30,8 +31,7 @@ const userSchema = new mongoose.Schema({
     default: 'https://i7.imageban.ru/out/2022/01/23/9d7970840a64cb4cb91fc28e9f65cf39.jpg',
     validate: {
       validator: function regexp(link) {
-        const regex = /^(https?:\/\/)(www.)?[a-zA-Z0-9\-.]+\.[a-zA-Z]{2,}(\/\S*)?$/;
-        return regex.test(link);
+        return linkRegExp.test(link);
       },
     },
   },

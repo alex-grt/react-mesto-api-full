@@ -10,6 +10,8 @@ const {
 module.exports = (err, req, res, next) => {
   if (err.message === 'Forbidden') {
     res.status(FORBIDDEN).send({ message: 'Доступ запрещён' });
+  } else if (err.message === 'Authorization Required') {
+    res.status(UNAUTHORIZED).send({ message: 'Необходима авторизация' });
   } else if (err.message === 'Unauthorized') {
     res.status(UNAUTHORIZED).send({ message: 'Неправильные почта или пароль' });
   } else if (err.name === 'ValidationError' || err.name === 'CastError') {

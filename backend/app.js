@@ -10,6 +10,7 @@ const errorHandler = require('./middlewares/error-handler');
 const corsHandler = require('./middlewares/cors-handler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const { createUser, login } = require('./controllers/users');
+const { linkRegExp } = require('./utils/regexps');
 
 const { PORT = 3000, DB_ADDRESS = 'mongodb://localhost:27017/mestodb' } = process.env;
 const app = express();
@@ -32,6 +33,9 @@ app.post('/signup', celebrate({
   body: Joi.object().keys({
     email: Joi.string().required().email(),
     password: Joi.string().required().min(6).max(20),
+    name: Joi.string().min(2).max(30),
+    about: Joi.string().min(2).max(30),
+    avatar: Joi.string().pattern(linkRegExp),
   }),
 }), createUser);
 app.use(auth);
