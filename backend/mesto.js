@@ -12,7 +12,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 const { createUser, login } = require('./controllers/users');
 const { linkRegExp } = require('./utils/regexps');
 
-const { PORT = 3000, DB_ADDRESS = 'mongodb://localhost:27017/mestodb' } = process.env;
+const { PORT = 3001, DB_ADDRESS = 'mongodb://localhost:27017/mestodb' } = process.env;
 const app = express();
 
 app.use(bodyParser.json());
